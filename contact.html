@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | ES Create Co.</title>
+    <meta name="description" content="Contact ES Create Co. to start your luxury social media campaign, brand launch, or premium marketing system.">
+    <meta name="keywords" content="contact, premium agency, social media marketing, luxury branding, creative services">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="cursor"></div>
+<div class="mobile-overlay"></div>
+
+<header class="site-header">
+    <a class="brand" href="index.html">
+    <img src="images/logo.png" alt="ES Create Co." class="logo-img">
+    </a>
+    <button class="menu-toggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <a class="nav-cta" href="contact.html">Get Quote</a>
+</header>
+
+<main>
+
+    <section class="hero">
+        <div class="hero-copy reveal">
+            <p class="eyebrow">Talk to us</p>
+            <h1>Ready to elevate your brand with premium creative and social strategy?</h1>
+            <p class="hero-text">
+                Send us a message with your project details, goals, and timeline.
+                We'll review your brief and respond within 24 hours with insights and availability.
+            </p>
+        </div>
+    </section>
+
+    <section class="contact-section reveal">
+
+        <div class="section-header">
+            <span>Get In Touch</span>
+            <h2>Send a detailed brief and we'll craft a custom response.</h2>
+        </div>
+
+        <div class="contact-layout">
+
+            <form class="contact-form" action="https://formspree.io/f/meeworke" method="POST">
+
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="Name" placeholder="Your name" required>
+
+                <label for="company">Business Name or Social Handle *</label>
+                <input type="text" id="company" name="Business Name" placeholder="Your business name or @handle" required>
+
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="Email" placeholder="you@company.com" required>
+
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="Phone" placeholder="e.g. 0400 000 000" required>
+
+                <label for="industry">Business Industry *</label>
+                <input type="text" id="industry" name="Business Industry" placeholder="e.g. Hospitality, Fashion, Real Estate" required>
+
+                <label for="location">Suburb / Location</label>
+                <input type="text" id="location" name="Location" placeholder="e.g. Melbourne, Southbank">
+
+                <label for="service">Service Interest</label>
+                <input type="text" id="service" name="Service" placeholder="Photography, social, ads, branding, etc.">
+
+                <label for="message">Project Brief *</label>
+                <textarea id="message" name="Message" rows="6" placeholder="Tell us about your project, goals, and vision..." required></textarea>
+
+                <!-- Calendar Date Picker -->
+                <div class="calendar-wrap">
+                    <label>Preferred Start Date</label>
+                    <div class="calendar">
+                        <div class="calendar-header">
+                            <button type="button" class="cal-nav" id="cal-prev">&#8249;</button>
+                            <span id="cal-month-label"></span>
+                            <button type="button" class="cal-nav" id="cal-next">&#8250;</button>
+                        </div>
+                        <div class="calendar-grid" id="cal-grid"></div>
+                        <p class="cal-selected-display" id="cal-display">No date selected</p>
+                    </div>
+                    <input type="hidden" name="Preferred Date" id="cal-input">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Send Brief</button>
+
+            </form>
+
+            <div class="contact-info">
+
+                <div style="margin-bottom:40px;">
+                    <h3>Email</h3>
+                    <a href="mailto:hello@escreateco.com" style="color:var(--accent);">hello@escreateco.com</a>
+                    <p style="color:var(--muted); margin-top:8px;">Fastest way to reach us.</p>
+                </div>
+
+                <div style="margin-bottom:40px;">
+                    <h3>Location</h3>
+                    <p>Melbourne, Victoria</p>
+                    <p style="color:var(--muted); margin-top:8px;">Based in Melbourne, serving clients globally.</p>
+                </div>
+
+                <div style="margin-bottom:40px;">
+                    <h3>Response Time</h3>
+                    <p>24 Hours</p>
+                    <p style="color:var(--muted); margin-top:8px;">Every enquiry receives a personalised response.</p>
+                </div>
+
+                <div>
+                    <h3>Office Hours</h3>
+                    <p>Monday – Friday, 9am – 5pm AEST</p>
+                    <p style="color:var(--muted); margin-top:8px;">Available for strategy calls and consultations.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="map-section reveal delay2">
+
+        <div class="section-header">
+            <span>Find Us</span>
+            <h2>Serving premium brands from Melbourne, Australia.</h2>
+        </div>
+
+        <div style="border-radius:8px; overflow:hidden; margin-top:32px; height:500px;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354710175523!2d144.9537041!3d-37.8136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf00ef62049ee02e0!2sMelbourne%20VIC!5e0!3m2!1sen!2sau!4v1234567890"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                loading="lazy"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+    </section>
+
+    <section class="faq-section reveal delay3">
+
+        <div class="section-header">
+            <span>FAQ</span>
+            <h2>Common questions about working with us.</h2>
+        </div>
+
+        <div style="max-width:700px; margin:48px auto;">
+
+            <div style="border-bottom:1px solid var(--border); padding:24px 0;">
+                <h3>What's your typical project timeline?</h3>
+                <p style="color:var(--muted);">Project timelines vary based on scope and complexity. Most projects range from 2–12 weeks.</p>
+            </div>
+
+            <div style="border-bottom:1px solid var(--border); padding:24px 0;">
+                <h3>Do you work with brands outside Australia?</h3>
+                <p style="color:var(--muted);">Yes. We regularly work with businesses across Australia and internationally.</p>
+            </div>
+
+            <div style="border-bottom:1px solid var(--border); padding:24px 0;">
+                <h3>Can you work on a retainer basis?</h3>
+                <p style="color:var(--muted);">Absolutely. Ongoing monthly retainers are available for brands needing consistent support.</p>
+            </div>
+
+            <div style="padding:24px 0;">
+                <h3>How do we get started?</h3>
+                <p style="color:var(--muted);">Submit a brief through the form above and we'll arrange a discovery call.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="cta-section reveal delay4">
+        <div>
+            <span>Let's create something extraordinary.</span>
+            <h2>Ready to work with a premium creative team?</h2>
+        </div>
+        <a href="mailto:escreateco@gmail.com" class="btn btn-primary">escreateco@gmail.com</a>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="footer-content">
+
+        <div class="footer-top">
+            <a href="index.html" class="brand">ES CREATE CO.</a>
+            <p class="footer-tagline">Driven by Results, Inspired by Stories</p>
+        </div>
+
+        <div class="footer-services">
+            <a href="photography.html">Photography</a>
+            <a href="videography.html">Videography</a>
+            <a href="social-media-management.html">Social Media</a>
+            <a href="ads-management.html">Ads Management</a>
+            <a href="logo-design.html">Branding</a>
+            <a href="content-creation.html">Content</a>
+            <a href="custom-requests.html">Custom</a>
+            <a href="it-support.html">IT Support</a>
+            <a href="website-development.html">Web Development</a>
+        </div>
+
+        <div class="footer-contact">
+            <div class="footer-contact-info">
+                <a href="mailto:escreateco@gmail.com">escreateco@gmail.com</a>
+                <a href="tel:0481160132">0481 160 132</a>
+            </div>
+            <a href="mailto:escreateco@gmail.com" class="btn btn-primary footer-cta" style="padding:10px 20px; font-size:.9rem; width:fit-content;">Get in Touch</a>
+            <div class="footer-socials">
+                <a href="https://instagram.com" target="_blank">📷</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 ES Create Co. • Built for premium growth</p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
