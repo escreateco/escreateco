@@ -9,6 +9,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .showcase-item {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+        .showcase-item .showcase-copy { order: 1; }
+        .showcase-item .showcase-image { order: 2; margin-bottom: 0 !important; min-height: 400px !important; }
+        .showcase-item:nth-child(even) .showcase-copy { order: 2; }
+        .showcase-item:nth-child(even) .showcase-image { order: 1; }
+        @media (max-width: 768px) {
+            .showcase-item { grid-template-columns: 1fr; gap: 24px; }
+            .showcase-item .showcase-copy,
+            .showcase-item .showcase-image,
+            .showcase-item:nth-child(even) .showcase-copy,
+            .showcase-item:nth-child(even) .showcase-image { order: unset; }
+        }
+    </style>
 </head>
 <body>
     <div class="cursor"></div>
@@ -78,34 +98,34 @@
 
         <section class="showcase reveal delay2">
             <div class="section-header"><span>Our Approach</span><h2>How we build thriving social communities.</h2></div>
-            
+
             <div class="showcase-item">
-                <div class="showcase-image" style="background: var(--surface); display: flex; align-items: center; justify-content: center; min-height: 400px; border-radius: 8px; margin-bottom: 24px;">
-                    <p style="color: var(--muted); text-align: center;">📋 Strategy Session Placeholder</p>
-                </div>
                 <div class="showcase-copy">
                     <h3>Audit & Strategy Development</h3>
                     <p>We audit your current social presence, analyze competitors, and understand your audience. Together we develop a comprehensive content strategy including platform selection, posting frequency, content themes, and growth targets aligned with your business objectives.</p>
                 </div>
+                <div class="showcase-image" style="background: var(--surface); display: flex; align-items: center; justify-content: center; min-height: 400px; border-radius: 8px;">
+                    <p style="color: var(--muted); text-align: center;">📋 Strategy Session Placeholder</p>
+                </div>
             </div>
 
             <div class="showcase-item">
-                <div class="showcase-image" style="background: var(--surface); display: flex; align-items: center; justify-content: center; min-height: 400px; border-radius: 8px; margin-bottom: 24px;">
-                    <p style="color: var(--muted); text-align: center;">📸 Content Creation Placeholder</p>
-                </div>
                 <div class="showcase-copy">
                     <h3>Content Creation & Curation</h3>
                     <p>Our creative team produces premium original content—photos, videos, graphics, captions, and stories—posted on a consistent schedule. We also curate relevant industry content and engage with trending conversations to keep your feed fresh, relevant, and worth following.</p>
                 </div>
+                <div class="showcase-image" style="background: var(--surface); display: flex; align-items: center; justify-content: center; min-height: 400px; border-radius: 8px;">
+                    <p style="color: var(--muted); text-align: center;">📸 Content Creation Placeholder</p>
+                </div>
             </div>
 
             <div class="showcase-item">
-                <div class="showcase-image" style="background: var(--surface); display: flex; align-items: center; justify-content: center; min-height: 400px; border-radius: 8px; margin-bottom: 24px;">
-                    <p style="color: var(--muted); text-align: center;">📊 Growth & Analytics Placeholder</p>
-                </div>
                 <div class="showcase-copy">
                     <h3>Growth, Engagement & Reporting</h3>
                     <p>We engage with your community daily—responding to comments, messages, and building genuine relationships. Monthly analytics reports show follower growth, engagement rates, reach, and which content resonates most. We continuously optimize based on data to compound growth over time.</p>
+                </div>
+                <div class="showcase-image" style="background: var(--surface); display: flex; align-items: center; justify-content: center; min-height: 400px; border-radius: 8px;">
+                    <p style="color: var(--muted); text-align: center;">📊 Growth & Analytics Placeholder</p>
                 </div>
             </div>
         </section>
@@ -125,7 +145,6 @@
                 <a href="index.html" class="brand">ES CREATE CO.</a>
                 <p class="footer-tagline">Driven by Results, Inspired by Stories</p>
             </div>
-
             <div class="footer-services">
                 <a href="photography.html">Photography</a>
                 <a href="videography.html">Videography</a>
@@ -137,7 +156,6 @@
                 <a href="it-support.html">IT Support</a>
                 <a href="website-development.html">Web Development</a>
             </div>
-
             <div class="footer-contact">
                 <div class="footer-contact-info">
                     <a href="mailto:escreateco@gmail.com">escreateco@gmail.com</a>

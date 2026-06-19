@@ -9,6 +9,50 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        /* Side-by-side showcase layout override */
+        .showcase-item {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+
+        .showcase-item .showcase-copy {
+            order: 1;
+        }
+
+        .showcase-item .showcase-image {
+            order: 2;
+            margin-bottom: 0 !important;
+            min-height: 400px !important;
+        }
+
+        /* Alternate layout every other item for visual variety */
+        .showcase-item:nth-child(even) .showcase-copy {
+            order: 2;
+        }
+
+        .showcase-item:nth-child(even) .showcase-image {
+            order: 1;
+        }
+
+        @media (max-width: 768px) {
+            .showcase-item {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .showcase-item .showcase-copy,
+            .showcase-item .showcase-image,
+            .showcase-item:nth-child(even) .showcase-copy,
+            .showcase-item:nth-child(even) .showcase-image {
+                order: unset;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="cursor"></div>
@@ -80,32 +124,32 @@
             <div class="section-header"><span>Our Process</span><h2>How we deliver premium photography.</h2></div>
             
             <div class="showcase-item">
-                <div class="showcase-image" style="background: var(--surface); display: flex; align-items: center; justify-content: center; min-height: 400px; border-radius: 8px; margin-bottom: 24px;">
-                    <p style="color: var(--muted); text-align: center;">📸 Photography Showcase Image Placeholder</p>
-                </div>
                 <div class="showcase-copy">
                     <h3>Concept & Planning</h3>
                     <p>We start with a detailed creative brief to understand your vision, brand aesthetic, target audience, and campaign objectives. This phase includes mood board creation, shot lists, location scouting, and timeline planning to ensure every shoot moment delivers results.</p>
                 </div>
+                <div class="showcase-image" style="background: var(--surface); display: flex; align-items: center; justify-content: center; min-height: 400px; border-radius: 8px;">
+                    <p style="color: var(--muted); text-align: center;">📸 Photography Showcase Image Placeholder</p>
+                </div>
             </div>
 
             <div class="showcase-item">
-                <div class="showcase-image" style="background: var(--surface); display: flex; align-items: center; justify-content: center; min-height: 400px; border-radius: 8px; margin-bottom: 24px;">
-                    <p style="color: var(--muted); text-align: center;">📷 Shoot Day Image Placeholder</p>
-                </div>
                 <div class="showcase-copy">
                     <h3>Professional Execution</h3>
                     <p>Our team brings professional-grade equipment, expert lighting, and creative direction to each shoot. Whether in-studio or on location, we capture multiple angles and variations to give you maximum creative flexibility and guaranteed strong final assets.</p>
                 </div>
+                <div class="showcase-image" style="background: var(--surface); display: flex; align-items: center; justify-content: center; min-height: 400px; border-radius: 8px;">
+                    <p style="color: var(--muted); text-align: center;">📷 Shoot Day Image Placeholder</p>
+                </div>
             </div>
 
             <div class="showcase-item">
-                <div class="showcase-image" style="background: var(--surface); display: flex; align-items: center; justify-content: center; min-height: 400px; border-radius: 8px; margin-bottom: 24px;">
-                    <p style="color: var(--muted); text-align: center;">✨ Edited Photos Placeholder</p>
-                </div>
                 <div class="showcase-copy">
                     <h3>Polish & Delivery</h3>
                     <p>Post-production includes professional color grading, retouching, batch editing, and format optimization. You'll receive fully polished images ready for web, print, ads, and social—plus raw files for your archives.</p>
+                </div>
+                <div class="showcase-image" style="background: var(--surface); display: flex; align-items: center; justify-content: center; min-height: 400px; border-radius: 8px;">
+                    <p style="color: var(--muted); text-align: center;">✨ Edited Photos Placeholder</p>
                 </div>
             </div>
         </section>

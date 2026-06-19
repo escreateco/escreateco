@@ -9,6 +9,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .showcase-item {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+        .showcase-item .showcase-copy { order: 1; }
+        .showcase-item .showcase-image { order: 2; margin-bottom: 0 !important; min-height: 400px !important; }
+        .showcase-item:nth-child(even) .showcase-copy { order: 2; }
+        .showcase-item:nth-child(even) .showcase-image { order: 1; }
+        @media (max-width: 768px) {
+            .showcase-item { grid-template-columns: 1fr; gap: 24px; }
+            .showcase-item .showcase-copy,
+            .showcase-item .showcase-image,
+            .showcase-item:nth-child(even) .showcase-copy,
+            .showcase-item:nth-child(even) .showcase-image { order: unset; }
+        }
+    </style>
 </head>
 <body>
     <div class="cursor"></div>
@@ -80,32 +100,32 @@
             <div class="section-header"><span>Our Process</span><h2>How we build powerful brand identities.</h2></div>
             
             <div class="showcase-item">
-                <div class="showcase-image" style="background: var(--surface); display: flex; align-items: center; justify-content: center; min-height: 400px; border-radius: 8px; margin-bottom: 24px;">
-                    <p style="color: var(--muted); text-align: center;">🎯 Brand Discovery Placeholder</p>
-                </div>
                 <div class="showcase-copy">
                     <h3>Discovery & Strategy</h3>
                     <p>We conduct in-depth brand discovery sessions to understand your vision, values, target audience, and competitive positioning. We analyze your market, identify opportunities, and develop a brand strategy that differentiates you and commands premium positioning.</p>
                 </div>
+                <div class="showcase-image" style="background: var(--surface); display: flex; align-items: center; justify-content: center; min-height: 400px; border-radius: 8px;">
+                    <p style="color: var(--muted); text-align: center;">🎯 Brand Discovery Placeholder</p>
+                </div>
             </div>
 
             <div class="showcase-item">
-                <div class="showcase-image" style="background: var(--surface); display: flex; align-items: center; justify-content: center; min-height: 400px; border-radius: 8px; margin-bottom: 24px;">
-                    <p style="color: var(--muted); text-align: center;">✨ Design Concepts Placeholder</p>
-                </div>
                 <div class="showcase-copy">
                     <h3>Design & Concept Development</h3>
                     <p>Our design team develops multiple logo concepts and visual direction options reflecting your brand strategy. Each concept is thoughtfully crafted to be timeless, versatile, and memorable. We refine through iterations and feedback until we achieve the perfect mark.</p>
                 </div>
+                <div class="showcase-image" style="background: var(--surface); display: flex; align-items: center; justify-content: center; min-height: 400px; border-radius: 8px;">
+                    <p style="color: var(--muted); text-align: center;">✨ Design Concepts Placeholder</p>
+                </div>
             </div>
 
             <div class="showcase-item">
-                <div class="showcase-image" style="background: var(--surface); display: flex; align-items: center; justify-content: center; min-height: 400px; border-radius: 8px; margin-bottom: 24px;">
-                    <p style="color: var(--muted); text-align: center;">📚 Brand Guidelines Placeholder</p>
-                </div>
                 <div class="showcase-copy">
                     <h3>Systems & Delivery</h3>
                     <p>We develop comprehensive brand guidelines documenting all visual systems, color codes, typography rules, and usage guidelines. You receive all design files, high-resolution formats for every application, and a complete brand book ready for your team and vendors.</p>
+                </div>
+                <div class="showcase-image" style="background: var(--surface); display: flex; align-items: center; justify-content: center; min-height: 400px; border-radius: 8px;">
+                    <p style="color: var(--muted); text-align: center;">📚 Brand Guidelines Placeholder</p>
                 </div>
             </div>
         </section>
@@ -125,7 +145,6 @@
                 <a href="index.html" class="brand">ES CREATE CO.</a>
                 <p class="footer-tagline">Driven by Results, Inspired by Stories</p>
             </div>
-
             <div class="footer-services">
                 <a href="photography.html">Photography</a>
                 <a href="videography.html">Videography</a>
@@ -137,7 +156,6 @@
                 <a href="it-support.html">IT Support</a>
                 <a href="website-development.html">Web Development</a>
             </div>
-
             <div class="footer-contact">
                 <div class="footer-contact-info">
                     <a href="mailto:escreateco@gmail.com">escreateco@gmail.com</a>
